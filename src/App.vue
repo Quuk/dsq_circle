@@ -3,15 +3,18 @@
         <el-aside width="25%">
             <sidebar/>
         </el-aside>
-        <el-main>主要内容区域</el-main>
+        <el-main>主要内容区域
+            <CheckOne theme="filled" size="32" fill="#17bd08"/>
+        </el-main>
     </el-container>
 </template>
 <script>
     import sidebar from "~/pages/main/sidebar";
     import reference from "~/pages/reference";
+    import {CheckOne} from '@icon-park/vue'
 
     export default {
-        components: {sidebar, reference},
+        components: {sidebar, reference, CheckOne},
         created() {
             this.swich();
         },
