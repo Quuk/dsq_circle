@@ -11,6 +11,21 @@
             <el-col :span="17">
                 <div class="title">老人与猫</div>
                 <div class="over-view">猫死了。 日头升到了笔架山的最高处，阳光如水倾泻而下，把公园里片片嫩叶洗刷得发亮，又在长椅上划分了一块专属的区域。猫蜷缩在长椅上，就像睡着了似的...</div>
+                <div class="between justify-center" style="margin-top: 5px">
+                    <div class="center icon-text" style="margin-top: 12px">
+                        <el-avatar :size="26"
+                                   src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar>
+                        <div class="author">tcyeee</div>
+                    </div>
+                    <div class="icon flex align-center">
+                        <message-sent theme="outline" size="20" fill="#333" :strokeWidth="1"/>
+                        <span class="icon-text">1234</span>
+                        <thumbs-up theme="outline" size="20" fill="#333" :strokeWidth="1"/>
+                        <span class="icon-text">1234</span>
+                        <share-two theme="outline" size="20" fill="#333" :strokeWidth="1"/>
+                        <span class="icon-text">1234</span>
+                    </div>
+                </div>
             </el-col>
 
             <el-col :offset="1" :span="6" class="img">
@@ -24,15 +39,36 @@
 </template>
 
 <script>
+    import {MessageSent, ThumbsUp, ShareTwo} from '@icon-park/vue'
+
     export default {
-        name: "main_page_content_overview"
+        name: "main_page_content_overview",
+        components: {MessageSent, ThumbsUp, ShareTwo}
     }
 </script>
 
 <style scoped>
+    .author {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .icon-text {
+        margin: 0 20px 0 4px;
+        color: #808080;
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .icon {
+        margin-top: 14px;
+        line-height: 17px;
+        text-align: left;
+    }
+
     .overview-item {
         height: 140px;
-        border-bottom: rgba(182, 183, 189, 0.67) 1px solid;
+        border-bottom: rgba(182, 183, 189, 0.19) 1px solid;
     }
 
     .img {
