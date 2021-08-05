@@ -5,14 +5,18 @@
  * @date 2021/8/5
 -->
 <template>
-    <contentOverview/>
+    <div>
+        <el-backtop target=".page-component__scroll .el-scrollbar__wrap"></el-backtop>
+        <contentOverview/>
+    </div>
 </template>
 
 <script>
     import contentOverview from "~/pages/common/main_page_content_overview";
+
     export default {
         name: "main_content",
-        components:{contentOverview},
+        components: {contentOverview},
     }
 </script>
 

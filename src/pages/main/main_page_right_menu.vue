@@ -6,14 +6,15 @@
 -->
 <template>
     <div>
-        <div class="margin-top-sm" style="background-color: rgba(188,143,143,0.32);border-radius: 7px;">right menu</div>
-        <div class="margin-top-sm" style="background-color: rgba(188,143,143,0.32);border-radius: 7px;">right menu</div>
+        <secondMenu/>
     </div>
 </template>
 
 <script>
+    import secondMenu from "~/pages/common/main_page_second_menu";
     export default {
-        name: "main_page_right_menu"
+        name: "main_page_right_menu",
+        components:{secondMenu},
     }
 </script>
 

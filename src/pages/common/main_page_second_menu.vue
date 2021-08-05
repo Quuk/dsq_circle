@@ -6,9 +6,10 @@
 -->
 <template>
     <div>
-        <Card>
-            看看这个
-        </Card>
+        <div class="center" v-for="item in 2"
+             style="height: 50px;background-color: rgba(188,143,143,0.32);border-radius: 7px;margin-top: 15px">
+            <div>量化工具</div>
+        </div>
     </div>
 </template>
 
