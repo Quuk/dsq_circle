@@ -6,9 +6,9 @@
 -->
 <template>
     <div class="relative" style="height: 100%;overflow: hidden">
-        <div class="flex">
+        <div class="flex align-center">
             <img src="../../assets/dsq.png" :height="160" :width="160"/>
-            <div>dsq_bbs</div>
+            <div class="title">dsq_bbs</div>
         </div>
         <div class="margin-top">
             <div class="width100 center" style="height: 100px">
@@ -42,5 +42,12 @@
 <style scoped>
     .referce {
         bottom: 3px;
+    }
+
+    .title {
+        font-size: 35px;
+        font-weight: bold;
+        color: grey;
+        text-align: center;
     }
 </style>

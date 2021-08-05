@@ -10,10 +10,10 @@
         <titleImg/>
         <el-row :gutter="20" class="margin-top">
             <el-col :span="19">
-                <div style="background-color: rgba(142,147,163,0.6);height: 1000px">left content</div>
+                <mainContent/>
             </el-col>
             <el-col :span="5">
-                <div style="background-color: rgba(188,143,143,0.32);border-radius: 7px">right menu</div>
+                <rightMenu/>
             </el-col>
         </el-row>
     </div>
@@ -21,10 +21,13 @@
 
 <script>
     import titleImg from "~/pages/common/main_page_title_img";
+    import mainContent from "~/pages/main/main_content";
+    import rightMenu from "~/pages/main/main_page_right_menu";
+
 
     export default {
         name: "main_page",
-        components: {titleImg},
+        components: {titleImg, mainContent, rightMenu},
         data() {
             return {}
         },
