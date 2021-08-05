@@ -5,7 +5,7 @@
  * @date 2021/8/2
 -->
 <template>
-    <div>
+    <div class="relative" style="height: 100%;overflow: hidden">
         <div class="flex">
             <img src="../../assets/dsq.png" :height="160" :width="160"/>
             <div>dsq_bbs</div>
@@ -24,18 +24,23 @@
                 <div class="margin-left padding-bottom-sm">蓝图</div>
             </div>
         </div>
+
+        <reference class="absolute width100 referce"/>
     </div>
 </template>
 
 <script>
     import {BuildingTwo} from '@icon-park/vue'
+    import reference from "~/pages/main/reference";
 
     export default {
         name: "sidebar",
-        components: {BuildingTwo}
+        components: {BuildingTwo, reference}
     }
 </script>
 
 <style scoped>
-
+    .referce {
+        bottom: 3px;
+    }
 </style>
