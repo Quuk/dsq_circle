@@ -14,7 +14,7 @@ const router = new Router({
         path: '/',
         component: () => import('~/pages/full_page')
     }, {
-        path: '/',
+        path: '/page',
         name: 'page',
         component: () => import('~/pages/content_page')
     }]

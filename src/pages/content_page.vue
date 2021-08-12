@@ -5,8 +5,8 @@
  * @date 2021/8/5
 -->
 <template>
-    <div>
-        <mavonEditor class="width80"
+    <div class="center" style="background-color:#E9EEF3">
+        <mavonEditor class="width70"
                      :editable="false"
                      :subfield="false"
                      defaultOpen="preview"

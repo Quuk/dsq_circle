@@ -5,7 +5,7 @@
  * @date 2021/8/12
 -->
 <template>
-    <el-container style="height: 100%">
+    <el-container style="height: 100vh">
         <el-aside width="25%" style="overflow-y: hidden">
             <sidebar/>
         </el-aside>
