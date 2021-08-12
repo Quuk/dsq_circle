@@ -9,7 +9,7 @@
         <!-- 如果有图  -->
         <el-row class="margin-top-sm overview-item" v-for="item in 10">
             <el-col :span="17">
-                <div class="title">老人与猫</div>
+                <div class="title" @click="click">老人与猫</div>
                 <div class="over-view">日头升到了笔架山的最高处，阳光如水倾泻而下，把公园里片片嫩叶洗刷得发亮，又在长椅上划分了一块专属的区域。猫蜷缩在长椅上，就像睡着了似的...</div>
                 <div class="between justify-center" style="margin-top: 5px">
                     <div class="center icon-text" style="margin-top: 12px">
@@ -33,17 +33,24 @@
             </el-col>
         </el-row>
 
-
         <!-- 如果没有图 -->
     </div>
 </template>
 
 <script>
-    import {MessageSent, ThumbsUp, ShareTwo} from '@icon-park/vue'
+    import {MessageSent, ShareTwo, ThumbsUp} from '@icon-park/vue'
 
     export default {
         name: "main_page_content_overview",
-        components: {MessageSent, ThumbsUp, ShareTwo}
+        components: {MessageSent, ThumbsUp, ShareTwo},
+        methods: {
+            click() {
+                console.log(this)
+                // var self = this;
+                // self.$router.this('bar')
+                // console.log("=======")
+            },
+        }
     }
 </script>
 
