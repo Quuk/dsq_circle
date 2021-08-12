@@ -38,6 +38,10 @@
             }
         },
         created() {
+            console.log("页面被加载了");
+        },
+        activated() {
+            console.log("有一次活动");
         },
         methods: {}
     }
